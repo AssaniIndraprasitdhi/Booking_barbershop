@@ -1,0 +1,197 @@
+/* Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,800;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Root */
+
+:root {
+
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+/* Background */
+.background {
+    background-image: url('../Img/Backgrond.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Reusable CSS */
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* WRAPPER */
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login-box {
+    position: relative;
+    width: 500px;
+    backdrop-filter: blur(25px);
+    border: 2px solid var(--white-color);
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    color: var(--white-color);
+    box-shadow: 0px 0px 10px 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.register-box {
+    position: relative;
+    width: 700px;
+    height: 90vh;
+    backdrop-filter: blur(25px);
+    border: 2px solid var(--white-color);
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    color: var(--white-color);
+    box-shadow: 0px 0px 10px 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    width: 140px;
+    height: 70px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+.header span {
+    font-size: xx-large;
+    color: var(--black-color);
+}
+
+.input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.input-field {
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    color: var(--black-color);
+    padding-inline: 20px 50px;
+    border: 2px solid var(--black-color);
+    border-radius: 30px;
+    outline: none;
+}
+
+#user {
+    margin-bottom: 10px;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: .2s;
+}
+
+.icon {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 20px;
+
+}
+
+
+.submit button {
+    width: 100%;
+    height: 50px;
+    background: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    border: solid var(--black-color);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit span {
+    color: var(--black-color);
+}
+
+.submit button:hover {
+    background-color: whitesmoke;
+    border-radius: 30px;
+}
+
+.submit span:hover {
+    color: black;
+}
+
+.register,
+.signin {
+    text-align: center;
+    font-size: 14px;
+}
+
+i {
+    color: #000000;
+}
+
+.register a {
+    text-decoration: underline;
+}
+
+.Name {
+    display: flex;
+    justify-content: center;
+}
+
+
+.img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.container-booking {
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+
